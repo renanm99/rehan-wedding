@@ -7,28 +7,29 @@ import type { SiteConfig } from '../types'
 export const site: SiteConfig = {
   couple: {
     partner1: 'Renan',
-    partner2: '…',
-    monogram: 'R & …',
+    partner2: 'Hannah',
+    monogram: 'R & H',
     heroImage: '/aquarela.jpeg',
   },
   date: {
-    iso: '2027-05-15T17:00:00-03:00',
-    label: '15 de maio de 2027',
-    venue: 'Sítio Recanto das Flores',
+    iso: '2027-10-11T18:00:00-03:00',
+    label: '11 de outubro de 2027',
+    venue: 'Recanto Callegari',
   },
   venue: {
-    name: 'Sítio Recanto das Flores',
-    address: 'Estrada das Hortênsias, km 12 — Zona Rural, Monte Verde, MG',
-    mapEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=-46.05%2C-22.9%2C-45.95%2C-22.8&layer=mapnik&marker=-22.85%2C-46.0',
-    mapLink: 'https://www.openstreetmap.org/?mlat=-22.85&mlon=-46.0#map=13/-22.85/-46.0',
+    name: 'Recanto Callegari',
+    address: 'Av. Parque Petrópolis, 365 — Serra da Cantareira, Mairiporã, SP, 07600-000',
+    mapEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=-46.6197%2C-23.3827%2C-46.6097%2C-23.3727&layer=mapnik&marker=-23.3777%2C-46.6147',
+    mapLink: 'https://www.openstreetmap.org/?mlat=-23.3777&mlon=-46.6147#map=16/-23.3777/-46.6147',
+    gps: { lat: -23.3777, lng: -46.6147 },
     photos: [
-      { src: '/images/venue-1.jpg', alt: 'Fachada do sítio' },
-      { src: '/images/venue-2.jpg', alt: 'Salão de festas ao ar livre' },
+      { src: '/images/venue-1.jpg', alt: 'Fachada do Recanto Callegari' },
+      { src: '/images/venue-2.jpg', alt: 'Área externa do Recanto Callegari' },
     ],
     routes: {
-      byCar: 'Pela rodovia MG-129, acesso pela estrada das Hortênsias no km 12. A estrada é de terra nos últimos 2 km, mas é tranquila para carros baixos.',
-      byTransit: 'Linha 3902 Monte Verde Centro → entrada do sítio (parada a 400m do portão). Ônibus de hora em hora aos sábados.',
-      parking: 'Estacionamento gratuito no local para ~120 carros, com manobrista na entrada do portão principal.',
+      byCar: 'Acesso com asfalto até a porta, pela Av. Parque Petrópolis, na região da Serra da Cantareira. Os percursos oficiais (via Zona Norte e via Fernão Dias) estão no site do buffet e evitam os trechos de terra.',
+      byTransit: 'Recomendamos carro ou transporte por aplicativo (Uber/táxi), a cerca de 40 minutos da zona norte de São Paulo. Para grupos, dá para fretar vans ou ônibus até o local.',
+      parking: 'Estacionamento no próprio local, com acesso asfaltado e espaço para carros, vans e ônibus de convidados.',
     },
   },
   story: {
@@ -63,7 +64,7 @@ export const site: SiteConfig = {
   },
   rsvp: {
     endpoint: '',
-    deadline: '30 de abril de 2027',
+    deadline: '30 de setembro de 2027',
   },
   gifts: {
     api: {

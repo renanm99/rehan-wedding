@@ -2,6 +2,7 @@ import { site } from '../../data/site'
 import { Section } from '../ui/Section'
 import { SmartImage } from '../ui/SmartImage'
 import { ButtonLink } from '../ui/Button'
+import { googleMapsDirectionsUrl, wazeDirectionsUrl } from '../../lib/maps'
 
 const routeDetails = [
   { title: 'De carro', body: 'byCar' },
@@ -10,7 +11,7 @@ const routeDetails = [
 ] as const
 
 export function Location() {
-  const { name, address, mapEmbedUrl, mapLink, photos, routes } = site.venue
+  const { name, address, mapEmbedUrl, mapLink, gps, photos, routes } = site.venue
 
   return (
     <Section
@@ -55,15 +56,32 @@ export function Location() {
             />
           </div>
 
-          <ButtonLink
-            href={mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="outline"
-            className="mt-6 self-start"
-          >
-            Abrir no mapa
-          </ButtonLink>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <ButtonLink
+              href={mapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+            >
+              Abrir no mapa
+            </ButtonLink>
+            <ButtonLink
+              href={googleMapsDirectionsUrl(gps.lat, gps.lng)}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+            >
+              Google Maps
+            </ButtonLink>
+            <ButtonLink
+              href={wazeDirectionsUrl(gps.lat, gps.lng)}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline"
+            >
+              Waze
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </Section>

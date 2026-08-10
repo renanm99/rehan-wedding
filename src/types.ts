@@ -38,6 +38,10 @@ export type SiteConfig = {
     address: string
     mapEmbedUrl: string
     mapLink: string
+    gps: {
+      lat: number
+      lng: number
+    }
     photos: GalleryImage[]
     routes: {
       byCar: string
