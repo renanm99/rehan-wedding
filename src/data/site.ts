@@ -35,19 +35,19 @@ export const site: SiteConfig = {
     intro: 'Tudo começou em um café… e desde então cada página dessa história tem sido a nossa favorita. Abaixo, um pequeno resumo dos nossos capítulos preferidos.',
     timeline: [
       {
-        year: '2019',
-        title: 'O primeiro encontro',
-        text: 'Nos conhecemos em uma cafeteria e a conversa não acabou nem quando o café esfriou.',
+        year: '2023',
+        title: 'Namoro',
+        text: 'O início de uma linda história de amor, com muitas risadas e momentos inesquecíveis.',
       },
       {
-        year: '2021',
-        title: 'Morando juntos',
-        text: 'Depois de dois anos de idas e vindas entre cidades, finalmente dividimos o mesmo endereço.',
-      },
-      {
-        year: '2025',
+        year: '2024',
         title: 'O pedido',
-        text: 'Uma viagem, um anel e a resposta mais fácil que já demos na vida.',
+        text: 'Debaixo do céu estrelado do Atacama, em uma viagem inesquecível, o pedido de casamento aconteceu.',
+      },
+      {
+        year: '2026',
+        title: 'Preparativos',
+        text: 'Inicio do planejamento do casamento, com muitas ideias e sonhos para o grande dia.',
       },
     ],
   },

@@ -18,7 +18,7 @@ export function CoupleIntro() {
 
       <div className="relative mx-auto flex min-h-[70vh] w-full max-w-5xl flex-col items-center justify-center px-5 py-24 text-center sm:min-h-[80vh] sm:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-olive">
-          Vamos nos casar
+          Casamento
         </p>
 
         <h1 className="mt-5 font-display text-5xl font-medium leading-tight text-ink sm:text-7xl">
