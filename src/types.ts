@@ -37,7 +37,6 @@ export type SiteConfig = {
     name: string
     address: string
     mapEmbedUrl: string
-    mapLink: string
     gps: {
       lat: number
       lng: number

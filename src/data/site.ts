@@ -19,8 +19,7 @@ export const site: SiteConfig = {
   venue: {
     name: 'Recanto Callegari',
     address: 'Av. Parque Petrópolis, 365 — Serra da Cantareira, Mairiporã, SP, 07600-000',
-    mapEmbedUrl: 'https://www.openstreetmap.org/export/embed.html?bbox=-46.6197%2C-23.3827%2C-46.6097%2C-23.3727&layer=mapnik&marker=-23.3777%2C-46.6147',
-    mapLink: 'https://www.openstreetmap.org/?mlat=-23.3777&mlon=-46.6147#map=16/-23.3777/-46.6147',
+    mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3!2d-46.6147!3d-23.3777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDIyJzM5LjciUyA0NsKwMzYnNTIuOSJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000',
     gps: { lat: -23.3777, lng: -46.6147 },
     photos: [
       { src: '/images/venue-1.jpg', alt: 'Fachada do Recanto Callegari' },

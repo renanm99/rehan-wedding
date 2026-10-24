@@ -1,11 +1,18 @@
 /**
- * Universal map navigation links. On mobile these open the installed
- * Google Maps / Waze app; on desktop they fall back to the web version.
+ * Map navigation links. On mobile these open the device's default maps app
+ * via a generic `geo:` deeplink; on desktop they open Google Maps.
  */
-export function googleMapsDirectionsUrl(lat: number, lng: number): string {
-  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`
+export function isMobileDevice(): boolean {
+  if (typeof window === 'undefined') return false
+  return (
+    (typeof window.matchMedia === 'function' &&
+      window.matchMedia('(pointer: coarse)').matches) ||
+    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)
+  )
 }
 
-export function wazeDirectionsUrl(lat: number, lng: number): string {
-  return `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`
+export function mapsLink(lat: number, lng: number): string {
+  return isMobileDevice()
+    ? `geo:0,0?q=${lat},${lng}`
+    : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`
 }

@@ -1,7 +1,7 @@
 import { site } from '../../data/site'
 
 export function CoupleIntro() {
-  const { partner1, partner2, heroImage, monogram } = site.couple
+  const { partner1, partner2, heroImage } = site.couple
   const { label, venue } = site.date
 
   return (
@@ -23,15 +23,11 @@ export function CoupleIntro() {
 
         <h1 className="mt-5 font-display text-5xl font-medium leading-tight text-ink sm:text-7xl">
           {partner1}
-          <span className="mx-3 text-sand">·</span>
+          <span className="mx-3 text-olive">·</span>
           {partner2}
         </h1>
 
-        <p className="mt-4 font-display text-2xl italic text-olive sm:text-3xl">
-          {monogram}
-        </p>
-
-        <span className="my-8 block h-px w-24 bg-sand" aria-hidden="true" />
+        <span className="mt-8 block h-px w-24 bg-sand" aria-hidden="true" />
 
         <div className="flex flex-col items-center gap-2 text-sm">
           <p className="text-lg font-medium tracking-wide text-ink">{label}</p>
